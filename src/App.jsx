@@ -100,7 +100,7 @@ class App extends Component {
                     <Button mode='secondary' onClick={() => window.open('https://admin.aniclap.ru')}>Admin Panel</Button>
                     <Button mode='secondary' onClick={() => window.open('https://github.com/aniclap')}>Открыть на GitHub</Button>
                   </ButtonGroup>, images: [
-                    'https://i.ibb.co/CBnQ7T3/chrome-K1cw7-Zakz-Y.png',
+                    'https://i.ibb.co/qkYyDjX/scr.png',
                     'https://i.ibb.co/4MNgkDP/chrome-jfi-P1-UDZz-S.png',
                     'https://i.ibb.co/XWQgv1b/chrome-9-Aln-ETr7kt.png',
                     'https://i.ibb.co/wRRt9mz/chrome-Veg-Vlwsxu-E.png',
