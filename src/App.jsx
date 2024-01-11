@@ -70,7 +70,7 @@ class App extends Component {
                     afterCaption='2022-н.в.'
                     text='Специальность: Программный инженер'
                     caption='Неполное высшее (бакалавриат)'
-                  >МГУ им.Н.П.Огарёва</RichCell>
+                  >МГУ им.Н.П.Огарёва, г. Саранск</RichCell>
                 </Group>
                 <Group header={<Header>Навыки</Header>}>
                   {[{chil:'Основной язык программирования: JavaScript', sub:'Знаком с: С++, C#, Python, Java', icon: <Icon24TriangleOutline width={10} height={10}/>},
@@ -127,7 +127,8 @@ class App extends Component {
                   {chil:'Телеграм', sub:'@mrpolopstar', icon: <FaTelegramPlane size={24}/>, after: <Icon24ArrowUpRightOutline/>, url: 'https://t.me/mrprolopstar'},
                   {chil:'VK', sub:'@mrpolopstar', icon: <Icon24LogoVk/>, after: <Icon24ArrowUpRightOutline/>, url: 'https://vk.me/mrprolopstar'},
                   {chil:'Discord', sub:'@lop', icon: <SiDiscord size={24}/>, after: <Icon24ArrowUpRightOutline/>, url: 'https://discord.com/users/375686018839478273'},
-                  {chil:'GitHub', sub:'@MrProLopstar', icon: <BsGithub size={24}/>, after: <Icon24ArrowUpRightOutline/>, url: 'https://github.com/MrProLopstar'}].map(x => (
+                  {chil:'GitHub', sub:'@MrProLopstar', icon: <BsGithub size={24}/>, after: <Icon24ArrowUpRightOutline/>, url: 'https://github.com/MrProLopstar'},
+                  {chil:'Dobro.ru', sub:'Волонтёрский профиль', icon: <Avatar size={24} src='https://s129vla.storage.yandex.net/rdisk/8e447e17fa089c65859218de7e86be2150e851d213c8a7b7ae382bbdfdfd1d3e/65a08032/ytZkkbW2lvZXqcPmRND2NXW7aHWHbpnmnjzmJZGCY950iMoK9EBFdxQEpxNc4mRIwStZKWMQkL_itsneZkatWg==?uid=0&filename=%D0%B8%D0%BA%D0%BE%D0%BD%D0%BA%D0%B8%20%D0%B4%D0%BE%D0%B1%D1%80%D0%BE%D1%80%D1%83%20RGB_5.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=0&fsize=4824&hid=97025cc655ebc59c88bcdeb6c7ce8c74&media_type=image&tknv=v2&etag=737156a2d0860f6cc1ad6d9d29be876b&rtoken=vEuVZgVRIT8x&force_default=no&ycrid=na-7a737a5d0f30bf42bc60352ae49c7fc2-downloader15e&ts=60eb44c1af080&s=44ff09c03e7d60650938ad833252200eff5647e3b42a70dd3486905f0be8977c&pb=U2FsdGVkX1-hAqKHd5byCR_-jcGsKhMnJn1v4FZbjq3-rKbtFD1jgShjpjSuICf1Gus4fXfYQFPBGefTGND9B4IdKhyxwwNN6QY-_aQPkOk'/>, after: <Icon24ArrowUpRightOutline/>, url: 'https://dobro.ru/volunteers/93763004'}].map(x => (
                     <SimpleCell
                       multiline
                       before={x.icon}
