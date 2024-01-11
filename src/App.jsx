@@ -97,11 +97,12 @@ class App extends Component {
                     <Button mode='secondary' onClick={() => window.open('https://admin.aniclap.ru')}>Admin Panel</Button>
                     <Button mode='secondary' onClick={() => window.open('https://github.com/aniclap')}>Открыть на GitHub</Button>
                   </ButtonGroup>, images: [
+                    'https://i.ibb.co/G7hkDTQ/chrome-v-WOFw8-HVoz.png',
+                    'https://i.ibb.co/VMMBwt7/image.png',
                     'https://i.ibb.co/qkYyDjX/scr.png',
                     'https://i.ibb.co/4MNgkDP/chrome-jfi-P1-UDZz-S.png',
                     'https://i.ibb.co/XWQgv1b/chrome-9-Aln-ETr7kt.png',
-                    'https://i.ibb.co/wRRt9mz/chrome-Veg-Vlwsxu-E.png',
-                    'https://i.ibb.co/G7hkDTQ/chrome-v-WOFw8-HVoz.png'
+                    'https://i.ibb.co/wRRt9mz/chrome-Veg-Vlwsxu-E.png'
                   ]}].map(x => (
                     <Fragment>
                       <RichCell
@@ -113,7 +114,7 @@ class App extends Component {
                         bottom={x.bottom}
                         actions={x.actions}
                       >{x.chil}</RichCell>
-                      {x.images && <Gallery isDraggable slideWidth={window.innerWidth<500 ? '60%' : "500px"} align="center">
+                      {x.images && <Gallery initialSlideIndex='2' isDraggable slideWidth={window.innerWidth<500 ? '60%' : "500px"} align="center">
                         {x.images.map((img,i) => <Img src={img} style={{objectFit: 'contain', objectPosition: 'center', borderRadius: 10}}/>)}
                       </Gallery>}
                     </Fragment>
