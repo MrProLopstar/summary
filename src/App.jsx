@@ -56,21 +56,18 @@ class App extends Component {
                   </Div>
                 </Group>
                 <Group header={<Header>Образование</Header>}>
-                  <RichCell
-                    disabled
-                    multiline
-                    before={<Icon28SchoolOutline color='purple' style={{marginTop:10}}/>}
-                    afterCaption='2011-2022'
-                    caption='Среднее общее'
-                  >Школа №507, г. Санкт-Петербург</RichCell>
-                  <RichCell
-                    disabled
-                    multiline
-                    before={<Icon28SchoolOutline color='green' style={{marginTop:15}}/>}
-                    afterCaption='2022-н.в.'
-                    text='Специальность: Программный инженер'
-                    caption='Неполное высшее (бакалавриат)'
-                  >МГУ им.Н.П.Огарёва, г. Саранск</RichCell>
+                  {[{chil:'Школа №507, г. Санкт-Петербург', capt:'Среднее общее', aftcapt:'2011-2022', icon: <Icon28SchoolOutline color='purple' style={{marginTop:10}}/>},
+                  {chil:'МГУ им.Н.П.Огарёва, г. Саранск', capt:'Неполное высшее (бакалавриат)', aftcapt:'2022-н.в.', text:'Специальность: Программный инженер', icon: <Icon28SchoolOutline color='green' style={{marginTop:10}}/>},
+                  {chil:'МГУ им.Н.П.Огарёва, г. Саранск', capt:'Цифровая кафедра, дополнительное образование', aftcapt:'2023-н.в. (1 год)', text:'Специальность: Data Science', icon: <Icon28SchoolOutline color='red' style={{marginTop:10}}/>}].map(x => (
+                    <RichCell
+                      disabled
+                      multiline
+                      before={x.icon}
+                      afterCaption={x.aftcapt}
+                      text={x.text}
+                      caption={x.capt}
+                    >{x.chil}</RichCell>
+                  ))}
                 </Group>
                 <Group header={<Header>Навыки</Header>}>
                   {[{chil:'Основной язык программирования: JavaScript', sub:'Знаком с: С++, C#, Python, Java', icon: <Icon24TriangleOutline width={10} height={10}/>},
