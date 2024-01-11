@@ -1,5 +1,6 @@
 import {Component} from 'react';
-import {Panel, View, Root, AppRoot,PanelHeader,ConfigProvider,Gradient,Avatar,Title,Group,Button,RichCell} from '@vkontakte/vkui';
+import {Panel, View, Root, AppRoot,PanelHeader,ConfigProvider,Gradient,Avatar,Title,Group,Button,RichCell,Header} from '@vkontakte/vkui';
+import {Icon28SchoolOutline} from '@vkontakte/icons';
 import avatar from './avatar.png';
 
 class App extends Component {
@@ -39,12 +40,23 @@ class App extends Component {
                     caption={age+(age%10==1 ? ' год' : (age%10==2 || age%10==3 || age%10==4 ? ' года' : ' лет'))+', 22.07.2004'}
                   >Гостяев Ярослав Витальевич</RichCell>
                 </Gradient>
-                <Group header='Образование'>
+                <Group header={<Header>Образование</Header>}>
                   <RichCell
                     disabled
-                    
+                    before={<Icon28SchoolOutline color='purple' style={{marginTop:10}}/>}
+                    afterCaption='2011-2022'
+                    caption='Среднее общее'
                   >
-
+                    Школа №507, г. Санкт-Петербург
+                  </RichCell>
+                  <RichCell
+                    disabled
+                    before={<Icon28SchoolOutline color='green' style={{marginTop:15}}/>}
+                    afterCaption='2022-н.в.'
+                    text='Специальность: Программный инженер'
+                    caption='Неполное высшее (бакалавриат)'
+                  >
+                    МГУ им.Н.П.Огарёва
                   </RichCell>
                 </Group>
               </Panel>
