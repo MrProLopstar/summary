@@ -91,7 +91,7 @@ class App extends Component {
                     <Button mode='secondary' onClick={() => window.open('https://vk.com/bot_rikl')}>Открыть группу VK</Button>
                     <Button mode='secondary' onClick={() => window.open('https://github.com/MrProLopstar/BotRikl')}>Открыть на GitHub</Button>
                   </ButtonGroup>},
-                  {chil:'AniClap', capt:'Сборник Опенингов, эндингов и саундтрэков аниме. Код скрыт в приватном репозитории, запрашивается отдельно.', after:'2021-н.в.', icon: <Avatar src={aniclap}/>, actions: <ButtonGroup mode='horizontal' gap='s'>
+                  {chil:'AniClap', capt:'Сборник Опенингов, эндингов и саундтрэков аниме. Код скрыт в приватном репозитории, запрашивается отдельно. С сентября 2023 года код полностью переписывается с нуля, делается админ панель, автоматизируется сбор данных.', after:'2021-н.в.', icon: <Avatar src={aniclap}/>, actions: <ButtonGroup mode='horizontal' gap='s'>
                     <Button mode='secondary' onClick={() => window.open('https://vk.com/app7474595')}>VK MiniApp (old)</Button>
                     <Button mode='secondary' onClick={() => window.open('https://vk.com/app517841785')}>VK MiniApp (test)</Button>
                     <Button mode='secondary' onClick={() => window.open('https://admin.aniclap.ru')}>Admin Panel</Button>
