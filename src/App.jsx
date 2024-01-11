@@ -40,6 +40,9 @@ class App extends Component {
                     caption={age+(age%10==1 ? ' год' : (age%10==2 || age%10==3 || age%10==4 ? ' года' : ' лет'))+', 22.07.2004'}
                   >Гостяев Ярослав Витальевич</RichCell>
                 </Gradient>
+                <Group header={<Header>О себе</Header>}>
+                  
+                </Group>
                 <Group header={<Header>Образование</Header>}>
                   <RichCell
                     disabled
